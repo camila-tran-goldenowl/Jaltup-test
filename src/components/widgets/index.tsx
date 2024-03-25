@@ -1,7 +1,9 @@
 import { useDrag } from 'react-dnd'
 import facebookLogo from '../../assets/logos/fb.png'
-import thumbnail from '../../assets/images/thumbnail.png'
-
+import thumbnail1 from '../../assets/images/thumb1.jpeg'
+import thumbnail2 from '../../assets/images/thumb2.jpeg'
+import thumbnail3 from '../../assets/images/thumb3.jpeg'
+import thumbnail4 from '../../assets/images/thumb4.jpeg'
 import { WIDGET_TYPES, WidgetType } from '../../constants'
 
 interface IFacebookWidgetsProps {
@@ -38,10 +40,26 @@ const FacebookWidget = ({ type }: IFacebookWidgetsProps) => {
         </div>
         {type === 'large' && (
           <div className="flex flex-wrap gap-4 max-w-xs">
-            <img src={thumbnail} alt="image 1" className="rounded-lg h-20" />
-            <img src={thumbnail} alt="image 2" className="rounded-lg h-20" />
-            <img src={thumbnail} alt="image 3" className="rounded-lg h-20" />
-            <img src={thumbnail} alt="image 4" className="rounded-lg h-20" />
+            <img
+              src={thumbnail1}
+              alt="image 1"
+              className="rounded-lg h-20 w-32"
+            />
+            <img
+              src={thumbnail2}
+              alt="image 2"
+              className="rounded-lg h-20 w-32"
+            />
+            <img
+              src={thumbnail3}
+              alt="image 3"
+              className="rounded-lg h-20 w-32"
+            />
+            <img
+              src={thumbnail4}
+              alt="image 4"
+              className="rounded-lg h-20 w-32"
+            />
           </div>
         )}
       </div>
