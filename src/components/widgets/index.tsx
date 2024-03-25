@@ -39,7 +39,7 @@ const FacebookWidget = ({ type }: IFacebookWidgetsProps) => {
           </button>
         </div>
         {type === 'large' && (
-          <div className="flex flex-wrap gap-4 max-w-xs">
+          <div className="flex flex-wrap gap-4 max-w-xs justify-end">
             <img
               src={thumbnail1}
               alt="image 1"
