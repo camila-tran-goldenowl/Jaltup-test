@@ -24,16 +24,16 @@ const Zone = ({
   }))
 
   const isActive = canDrop && isOver
-  let backgroundColor = 'rgb(203 213 225)'
+  let backgroundColor = 'rgba(225,225,225,255)'
   if (isActive) {
-    backgroundColor = 'rgb(241 245 249)'
+    backgroundColor = 'rgba(225,225,225, 0.6)'
   } else if (canDrop) {
-    backgroundColor = 'rgb(248 250 252)'
+    backgroundColor = 'rgba(225,225,225, 0.7)'
   }
 
   return (
     <div
-      className={`border border-dotted border-black bg-slate-300 p-4 rounded-lg flex md:flex-row flex-col justify-center items-center w-full ${
+      className={`border border-dotted border-black bg-slate-300 p-4 rounded-3xl flex md:flex-row flex-col justify-center items-center w-full min-w-min min-h-14 ${
         isLarge
           ? 'md:w-[700px] min-h-[300px]'
           : 'md:w-[300px] flex justify-center items-center min-h-[200px]'

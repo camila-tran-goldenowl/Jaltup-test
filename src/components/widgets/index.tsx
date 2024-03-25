@@ -23,18 +23,18 @@ const FacebookWidget = ({ type }: IFacebookWidgetsProps) => {
 
   return (
     <div
-      className={`rounded-lg bg-white h-52 p-4 flex cursor-pointer ${containerClassName}`}
+      className={`rounded-3xl bg-white h-52 p-4 flex cursor-pointer ${containerClassName}`}
       ref={drag}
       style={{ opacity }}
     >
-      <div className="flex md:gap-10 gap-14 justify-between">
+      <div className="flex md:gap-5 justify-between">
         <div className="flex flex-col justify-between">
           <div className="">
             <img src={facebookLogo} alt="facebook logo" className="w-12" />
-            <p className="text-black font-bold font-base mt-4">Facebook</p>
+            <p className="text-black font-bold font-base mt-2">Facebook</p>
           </div>
 
-          <button className="bg-[#1877F2] rounded-[20px] py-2 px-4 text-white md:text-base text-sm">
+          <button className="bg-[#1877F2] rounded-full py-2 px-4 text-white md:text-base text-sm">
             Follow 6.5K
           </button>
         </div>
@@ -43,22 +43,22 @@ const FacebookWidget = ({ type }: IFacebookWidgetsProps) => {
             <img
               src={thumbnail1}
               alt="image 1"
-              className="rounded-lg h-20 w-32"
+              className="rounded-lg h-20 w-28"
             />
             <img
               src={thumbnail2}
               alt="image 2"
-              className="rounded-lg h-20 w-32"
+              className="rounded-lg h-20 w-28"
             />
             <img
               src={thumbnail3}
               alt="image 3"
-              className="md:block hidden rounded-lg h-20 w-32"
+              className="md:block hidden rounded-lg h-20 w-28"
             />
             <img
               src={thumbnail4}
               alt="image 4"
-              className="md:block hidden rounded-lg h-20 w-32"
+              className="md:block hidden rounded-lg h-20 w-28"
             />
           </div>
         )}
