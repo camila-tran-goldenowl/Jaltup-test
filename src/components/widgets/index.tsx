@@ -27,14 +27,14 @@ const FacebookWidget = ({ type }: IFacebookWidgetsProps) => {
       ref={drag}
       style={{ opacity }}
     >
-      <div className="flex gap-10 justify-between">
+      <div className="flex md:gap-10 gap-14 justify-between">
         <div className="flex flex-col justify-between">
           <div className="">
             <img src={facebookLogo} alt="facebook logo" className="w-12" />
             <p className="text-black font-bold font-base mt-4">Facebook</p>
           </div>
 
-          <button className="bg-[#1877F2] rounded-[20px] py-2 px-4 text-white">
+          <button className="bg-[#1877F2] rounded-[20px] py-2 px-4 text-white md:text-base text-sm">
             Follow 6.5K
           </button>
         </div>
@@ -53,12 +53,12 @@ const FacebookWidget = ({ type }: IFacebookWidgetsProps) => {
             <img
               src={thumbnail3}
               alt="image 3"
-              className="rounded-lg h-20 w-32"
+              className="md:block hidden rounded-lg h-20 w-32"
             />
             <img
               src={thumbnail4}
               alt="image 4"
-              className="rounded-lg h-20 w-32"
+              className="md:block hidden rounded-lg h-20 w-32"
             />
           </div>
         )}

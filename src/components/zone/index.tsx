@@ -33,8 +33,10 @@ const Zone = ({
 
   return (
     <div
-      className={`border border-dotted border-black bg-slate-300 p-4 rounded-lg flex justify-center ${
-        isLarge ? 'w-[700px]' : 'w-[300px] flex justify-center items-center'
+      className={`border border-dotted border-black bg-slate-300 p-4 rounded-lg flex md:flex-row flex-col justify-center items-center w-full ${
+        isLarge
+          ? 'md:w-[700px] min-h-[300px]'
+          : 'md:w-[300px] flex justify-center items-center min-h-[200px]'
       }`}
       ref={drop}
       style={{ backgroundColor }}
